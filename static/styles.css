@@ -26,7 +26,7 @@ body {
 
 
 .metro_logo{
-    background-image: url("/static/Buttons:Logo etc/MetroBus_Logo-removebg-preview 1.png");
+    background-image: url("/static/Buttons:Logo etc/MetroBus_Logo.png");
     position: absolute;
     width: 405px;
     height: 123px;
@@ -223,3 +223,4 @@ color: #FFFFFF;
 button[type="submit"]:hover {
     background-color: #45a049;
 }
+
