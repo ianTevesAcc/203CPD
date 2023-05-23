@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>User Registration</title>
+
+
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <div class="metro_logo(register)"></div>
 
+
+
 <body class="register_background">
 <h1 class="create_acc_title">Create Account</h1>
+
 
   <form action = "http://127.0.0.1:5000/register" method = "POST">
     <div class="register-form-group">
@@ -38,18 +43,12 @@
       <input type="password" id="register-confirm-password" name="confirm_password" required>
     </div>
 
+    <a href="http://127.0.0.1:5000/login">
     <button type="submit">Register</button>
+      </a>
   </form>
 
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <ul class="flash-messages">
-      {% for message in messages %}
-        <li>{{ message }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endwith %}
+
 
 </body>
 
