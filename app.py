@@ -32,6 +32,11 @@ def register_user():
     return redirect('/login')
 
 
+@app.route('/home', methods=['GET'])
+def home():
+    return render_template('index.html')
+
+
 @app.route('/login', methods=['GET'])
 def login():
     return render_template('login.html')
