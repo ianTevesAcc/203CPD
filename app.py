@@ -8,6 +8,10 @@ app = Flask(__name__)
 def main():  # put application's code here
     return render_template('register.html')
 
+@app.route('/top_up', methods=['GET'])
+def top_up():
+    return render_template('topUpCard.html')
+
 
 @app.route('/register', methods=['POST'])
 def register_user():

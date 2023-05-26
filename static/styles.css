@@ -199,8 +199,8 @@ button[type="submit"] {
 position: absolute;
 width: 130px;
 height: 40px;
-left: 600px;
-top: 730px;
+left: 200px;
+top: 180px;
 
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 box-sizing: border-box;
@@ -222,5 +222,155 @@ color: #FFFFFF;
 
 button[type="submit"]:hover {
     background-color: #45a049;
+}
+
+
+/*top up page*/
+.topUp_background {
+position: relative;
+width: 390px;
+height: 844px;
+
+background: linear-gradient(180deg, rgba(216, 235, 232, 0) 50%, #D8EBE8 100%);
+}
+
+.metro_logo\(topUp\){
+background-image: url("/static/Buttons-Logo etc/colored_metrologo.png");
+    position: absolute;
+    width: 225px;
+    height: 70px;
+    left: 550px;
+}
+
+.topUp_prompt {
+font-family: "PT Sans";
+font-style: normal ;
+font-weight: 550;
+font-size: 25px;
+line-height: 16px;
+white-space: nowrap;
+
+position: absolute;
+width: 130px;
+height: 40px;
+left: 500px;
+top: 160px;
+}
+
+.Top-Up-input1 {
+position: absolute;
+width: 30px;
+height: 20px;
+left: 495px;
+top: 195px;
+}
+
+.Top-Up-label1 {
+ font-family: "PT Sans";
+font-style: italic ;
+font-weight: 520;
+font-size: 20px;
+line-height: 16px;
+
+position: absolute;
+width: 130px;
+height: 40px;
+left: 450px;
+top: 197px;
+}
+
+.Top-Up-input2 {
+position: absolute;
+width: 30px;
+height: 20px;
+left: 495px;
+top: 225px;
+}
+
+.Top-Up-label2 {
+ font-family: "PT Sans";
+font-style: italic ;
+font-weight: 520;
+font-size: 20px;
+line-height: 16px;
+
+position: absolute;
+width: 130px;
+height: 40px;
+left: 450px;
+top: 227px;
+}
+
+.Top-Up-input3 {
+position: absolute;
+width: 30px;
+height: 20px;
+left: 495px;
+top: 255px;
+}
+
+.Top-Up-label3 {
+ font-family: "PT Sans";
+font-style: italic ;
+font-weight: 520;
+font-size: 20px;
+line-height: 16px;
+
+position: absolute;
+width: 130px;
+height: 40px;
+left: 450px;
+top: 257px;
+}
+.topUp-add-in {
+font-family: "PT Sans";
+font-style: italic ;
+font-weight: 520;
+font-size: 20px;
+line-height: 16px;
+
+position: absolute;
+width: 390px;
+height: 30px;
+left: 490px;
+top: 300px;
+}
+
+.Payment {
+font-family: "PT Sans";
+font-style: normal ;
+font-weight: 550;
+font-size: 25px;
+line-height: 16px;
+white-space: nowrap;
+
+position: absolute;
+width: 130px;
+height: 40px;
+left: 500px;
+top: 430px;
+}
+
+
+.cc-label {
+font-family: "PT Sans";
+font-style: italic ;
+font-weight: 520;
+font-size: 18px;
+line-height: 16px;
+
+position: absolute;
+width: 130px;
+height: 40px;
+left: 470px;
+top: 480px;
+}
+
+.cc-form {
+position: absolute;
+width: 320px;
+height: 40px;
+left: 480px;
+top: 500px;
 }
 

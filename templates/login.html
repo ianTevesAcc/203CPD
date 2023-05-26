@@ -8,22 +8,29 @@
 {% endblock %}
 
 {% block body %}
-<div class="metro_logo"></div>
+
+
+<body>
+    <div class="metro_logo"></div>
 
     <div class="container">
-      <form>
-        <div class="form-group">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username">
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password">
-        </div>
-          <button id="logIn" type="LogIn">
-              <a href="http://127.0.0.1:5000/home" class="text-decoration-none font-weight-normal text-reset">Log In</a>
-          </button>
-         <a href="http://127.0.0.1:5000/user_info"><h2 class="register_card">Create an account</h2> </a>
-      </form>
+  <form>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
     </div>
-{% endblock %}
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </div>
+    <button type="submit">LOG IN</button>
+     <a href="http://127.0.0.1:5000/user_info"><h2 class="register_card">Create an account</h2> </a>
+  </form>
+
+    </div>
+
+
+</body>
+
+
+</html>
