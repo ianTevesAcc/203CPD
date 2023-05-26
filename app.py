@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, redirect
 import sqlite3
+
 app = Flask(__name__)
 
 
@@ -30,6 +31,12 @@ def register_user():
 
     return redirect('/login')
 
+
+@app.route('/home', methods=['GET'])
+def home():
+    return render_template('index.html')
+
+
 @app.route('/login', methods=['GET'])
 def login():
     return render_template('login.html')
@@ -37,6 +44,3 @@ def login():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-
