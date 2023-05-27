@@ -1,9 +1,9 @@
 {%  extends 'base.html' %}
 
-{% block head %}
+
     <title>Registration</title>
 
-{% endblock %}
+
 
 {% block body %}
     <div class="metro_logo(register)"></div>
@@ -37,8 +37,10 @@
             <input type="password" id="register-confirm-password" name="confirm_password" required>
         </div>
 
+
         <a href="http://127.0.0.1:5000/login">
-        <button type="submit">Register</button>
+        <button class="register_button" type="submit">Register</button>
         </a>
+
     </form>
 {% endblock %}
