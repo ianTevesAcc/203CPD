@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-
-    <div class="header">
-  <div id="clock"></div>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-</head>
+
+    <title>Login</title>
+    <div class="header">
+        <div id="clock"></div>
+    </div>
 
 
 <body>
@@ -25,15 +25,15 @@
       <label for="password">Password:</label>
       <input type="password" id="password" name="password">
     </div>
-    <button type="LogIn">LOG IN</button>
-     <a href="http://127.0.0.1:5000/user_info"><h2 class="register_card">Create an account</h2> </a>
+
+
+    <button type="submit" class="login_button">LOG IN</button>
+     <a href="https://metrobus-app.onrender.com/user_info"><h2 class="register_card">Create an account</h2> </a>
+
   </form>
 
-</div>
+    </div>
 
-{% if message %}
-    <p>{{ message }}</p>
-{% endif %}
 
 </body>
 

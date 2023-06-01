@@ -1,11 +1,16 @@
 from flask import Flask, request, render_template, redirect
 import sqlite3
+
 app = Flask(__name__)
 
 
 @app.route('/user_info', methods=['GET'])
 def main():  # put application's code here
     return render_template('register.html')
+
+@app.route('/top_up', methods=['GET'])
+def top_up():
+    return render_template('topUpCard.html')
 
 
 @app.route('/register', methods=['POST'])
@@ -27,9 +32,13 @@ def register_user():
     cursor.execute(sql_query, (data_model['username'], data_model['email'], data_model['password']))
 
     conn.commit()
+
     return redirect('/login')
 
 
+@app.route('/home', methods=['GET'])
+def home():
+    return render_template('index.html')
 
 
 @app.route('/login', methods=['GET'])
@@ -37,32 +46,5 @@ def login():
     return render_template('login.html')
 
 
-
-
-
-
-    # if request.method == 'POST':
-    #     username = request.form['username']
-    #     password = request.form['password']
-    #
-    #     conn = sqlite3.connect('users.sqlite')
-    #     c = conn.cursor()
-    #
-    #
-    #     c.execute('SELECT * FROM users WHERE username=? AND password=?', (username, password))
-    #     user = c.fetchone()
-    #
-    #     if user:
-    #         return redirect('/')
-    #     else:
-    #         error = 'Invalid username or password.'
-    #         return render_template('login.html')
-    #
-    # return render_template('login.html')
-
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
-
